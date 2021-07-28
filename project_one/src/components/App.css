@@ -1,0 +1,122 @@
+
+.grid{
+    max-width: 1360px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.card{
+    width: 300px;
+    margin: 40px 20px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 20px -10px var(--neutral-light);  
+    cursor: pointer;
+    transition: all 0.2s linear;
+}
+
+.card:hover{
+    box-shadow: 1px 1px 20px -10px var(--primary);
+    transform: scale(1.1);
+}
+
+.card-image{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+}
+
+.card-body{
+    padding: 20px;
+}
+
+.card-footer{
+    margin-top: 20px;
+}
+
+.rest-name{
+    font-size: 24px; 
+    line-height: 28px; 
+    margin: 0; 
+}
+
+.rest-type{
+    font-size: 14px; 
+    margin: 0; 
+    color: var(--neutral-light);
+}
+
+.rest-address, .rest-phone, .rest-hours{
+    display: flex;
+    margin: 5px 0;
+}
+
+.rest-phone .fas, .rest-address .fas, .rest-hours .fas{
+   color: var(--primary);
+   display: block;
+   width: 30px;
+   flex: none;
+   padding: 4px 0;
+}
+
+.rest-phone span, .rest-address span, .rest-hours span{
+    display: block;
+    font-size: 14px;
+ }
+
+ /* restaurant-page style */
+
+ .container{
+     height: 100vh;
+     display: flex;
+     
+ }
+
+ .left-col, .right-col{
+     width: 50%;
+ }
+
+ .left-col img{
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+ }
+
+ .right-col{
+     padding: 40px;
+     overflow-y: scroll;
+ }
+
+ .rest-page .rest-name{
+     font-size: 42px;
+     margin-bottom: 14px;
+ }
+
+ .rest-page .rest-type{
+    font-size: 18px;
+}
+
+.rest-description{
+    font-size: 18px;
+}
+
+.review-section {
+    padding: 20px 0;
+    margin: 40px 0;
+    border-top: 1px solid var(--neutral-light);
+    border-bottom: 1px solid var(--neutral-light);
+}
+
+.reviews{
+    color: var(--primary);
+    margin-bottom: 10px;
+}
+
+.rest-review{
+    color: var(--neutral-light);
+    margin-top: 0;
+
+}
